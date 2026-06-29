@@ -7,7 +7,8 @@ MCU and bootloader target are compatible. The extra Plus pads are referenced by
 their nRF52840 GPIO names:
 
 - D11 / P0.15 replaces the original NFC2 / P0.10 pad.
-- D12 / P0.19 replaces the original NFC1 / P0.09 pad.
+- P1.01 replaces the original NFC1 / P0.09 pad. The first Plus mapping used
+  P0.19, but P1.01 is used now so a damaged P0.19 pad is not required.
 
 `CONFIG_NFCT_PINS_AS_GPIOS` is not needed because this mapping no longer uses
 the NFC pins.
